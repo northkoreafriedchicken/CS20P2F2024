@@ -9,7 +9,7 @@ public class RectanglePeri {
 		int l = 13;
 		System.out.print ("the perimiter of the rectangle is ");
 		System.out.print (2 * w + 2 * l);
-		
+		//
 	}
 
 }
