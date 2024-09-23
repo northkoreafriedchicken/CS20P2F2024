@@ -11,24 +11,31 @@ public class GradeAvg {
 		int grade3;
 		int grade4;
 		int grade5;
+		int average = 0;
 		System.out.print("What is your first grade?: ");
 		Scanner input1 = new Scanner(System.in);
 		grade1 = input1.nextInt();
+		average += grade1;
 		System.out.print("What is your second grade?: ");
 		Scanner input2 = new Scanner(System.in);
 		grade2 = input2.nextInt();
+		average += grade2;
 		System.out.print("What is your third grade?: ");
 		Scanner input3 = new Scanner(System.in);
 		grade3 = input3.nextInt();
+		average += grade3;
 		System.out.print("What is your forth grade?: ");
 		Scanner input4 = new Scanner(System.in);
 		grade4 = input4.nextInt();
+		average += grade4;
 		System.out.print("What is your fifth grade?: ");
 		Scanner input5 = new Scanner(System.in);
 		grade5 = input5.nextInt();
-		int average = (grade1 + grade2 + grade3 + grade4 + grade5) / 5;
+		average += grade5;
+		average /= 5;
 		System.out.print("your grade average is ");
 		System.out.print(average);
+		System.out.print("%");
 	}
 
 }
