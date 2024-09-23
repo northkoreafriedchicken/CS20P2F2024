@@ -33,7 +33,7 @@ public class GradeAvg {
 		grade5 = input5.nextInt();
 		average += grade5;
 		average /= 5;
-		System.out.print("your grade average is ");
+		System.out.print("Your grade average is ");
 		System.out.print(average);
 		System.out.print("%");
 	}
