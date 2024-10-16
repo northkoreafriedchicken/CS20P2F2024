@@ -14,8 +14,7 @@ public class RandomNum {
 		System.out.print("What is your maximum random number?: ");
 		max = input.nextInt();
 		
-		System.out.print(
-				(int)((max - min + 1) * Math.random() + min));
+		System.out.print((int)((max - min + 1) * Math.random() + min));
 		
 	}
 
