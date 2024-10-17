@@ -8,8 +8,7 @@ public class NumbersSum {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Input a number: ");
 		int max = input.nextInt();
-		int num = 0;
-		int sum = 0;
+		int num = 0, sum = 0;
 		while (num < max) {
 			num = num + 1;
 			System.out.println(num);
