@@ -8,7 +8,10 @@ public class PrimeNumber {
 		int divider = 1;
 		Boolean primable = false;
 		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Enter a number: ");
 		int prime = input.nextInt();
+		
 		while (divider < prime) {
 			divider = divider + 1;
 			if (prime % divider == 0) {
@@ -18,9 +21,11 @@ public class PrimeNumber {
 				}
 			}
 		}
+		
 		if (primable == true) {
 			System.out.println(prime + " is not a prime number");
 		}
+		
 		else {
 			System.out.println(prime + " is a prime number");
 		}
