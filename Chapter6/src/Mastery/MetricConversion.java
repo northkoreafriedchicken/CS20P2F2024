@@ -70,6 +70,8 @@ public class MetricConversion {
 			System.out.println("invalid input");
 			System.exit(0);
 		}
+		conversion = Math.round(conversion * 100);
+		conversion = conversion/100;
 		System.out.println(num1 + " " + measure1 + " equals " + conversion + " " + measure2 + ".");
 	}
 
