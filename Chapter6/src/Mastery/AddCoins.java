@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class AddCoins {
 
 	static String getDollarAmount(double quarters, double dimes, double nickels, double pennies) {
-		
 		String total = "$" + (quarters * 0.25 + dimes * 0.10 + nickels * 0.05 + pennies * 0.01);
 		return total;
 	}
