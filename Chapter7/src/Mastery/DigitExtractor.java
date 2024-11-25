@@ -8,7 +8,7 @@ public class DigitExtractor {
 	static int integer;
 	public static boolean quit;
 	
-	public static void DigitExtractor() {
+	public DigitExtractor() {
 		if ("w".equals(selection)) {
 			System.out.println("The whole number is " + integer);
 		} else if ("o".equals(selection)) {
@@ -33,6 +33,7 @@ public class DigitExtractor {
 		System.out.println("Show (H)undreds place number.");
 		System.out.println("(Q)uit");
 	}
+
 	
 
 	}

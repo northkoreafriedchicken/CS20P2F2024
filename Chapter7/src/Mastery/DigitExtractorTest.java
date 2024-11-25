@@ -12,7 +12,7 @@ public class DigitExtractorTest {
 			Scanner input1 = new Scanner(System.in);
 			System.out.print("Enter your choice: ");
 			DigitExtractor.selection = input1.nextLine();
-			DigitExtractor.DigitExtractor();
+			DigitExtractor de = new DigitExtractor();
 			System.out.println(" ");
 		}
 
