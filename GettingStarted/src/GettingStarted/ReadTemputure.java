@@ -1,9 +1,12 @@
 package GettingStarted;
 
+import java.text.DecimalFormat;
+
 //Add Phidgets Library | You added a file called phidget22 when configuring your project. Import gives you access to the Phidgets library code inside that file. 
 import com.phidget22.*;
 
 public class ReadTemputure {
+	private static final DecimalFormat df = new DecimalFormat("0.00");
   public static void main(String[] args) throws Exception{
 
       //Create | Here you have created a TemperatureSensor object. TemperatureSensor is a class in your Phidgets library that gathers temperature data from your Phidget. 
@@ -15,7 +18,7 @@ public class ReadTemputure {
       //Use your Phidgets | This code will print the temperature every 150ms
       while (true) {
           System.out.println("Temperature: " + temperatureSensor.getTemperature() + " °C" );
-          System.out.println("Temperature: " + ((temperatureSensor.getTemperature() * 1.8) + 32) + " °F" );
+          System.out.println("Temperature: " + (df.format((temperatureSensor.getTemperature() * 1.8) + 32)) + " °F" );
           Thread.sleep(150);
       }
   }
